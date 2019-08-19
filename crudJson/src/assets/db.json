@@ -1,0 +1,11 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "fname": "Ajay",
+      "lname": "Sharma",
+      "designation": "Manager",
+      "branch": "Somajiguda"
+    }
+  ]
+}
