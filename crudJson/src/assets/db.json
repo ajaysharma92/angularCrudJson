@@ -1,11 +1,46 @@
 {
   "employee": [
     {
-      "id": 1,
+      "id": 1001,
       "fname": "Ajay",
       "lname": "Sharma",
       "designation": "Manager",
       "branch": "Somajiguda"
+    },
+    {
+      "id": 1002,
+      "fname": "Raj",
+      "lname": "Sha",
+      "designation": "Senoir",
+      "branch": "Begumpet"
+    },
+    {
+      "id": 1003,
+      "fname": "Ravi",
+      "lname": "Kumar",
+      "designation": "Junior",
+      "branch": "Jubilee Hills"
+    },
+    {
+      "id": 1004,
+      "fname": "Sandeep",
+      "lname": "Haldar",
+      "designation": "Fresher",
+      "branch": "Kokapet"
+    },
+    {
+      "fname": "asdadasda",
+      "lname": "asdcasf",
+      "designation": "asdasxasd",
+      "branch": "asdasdwqd",
+      "id": 1005
+    },
+    {
+      "fname": "aswdcsdfsdf",
+      "lname": "sdcsdfdg",
+      "designation": "sdcfsdfdsf",
+      "branch": "sdfserefsdc",
+      "id": 1006
     }
   ]
 }

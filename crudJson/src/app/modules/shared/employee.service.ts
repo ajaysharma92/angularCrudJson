@@ -11,6 +11,15 @@ const headerOption = {
 export class EmployeeService {
 
   mockUrl = 'http://localhost:3000/employee';
+
+  currentEmployee:Employee={
+    fname:'',
+    lname:'',
+    designation:'',
+    branch:'',
+    id:null
+  }
+
   constructor(
     private http : HttpClient
   ) { }
@@ -23,4 +32,11 @@ export class EmployeeService {
     return this.http.delete<Employee>(this.mockUrl +'/'+id, headerOption);
   }
 
+  createEmployee(emp : Employee):Observable<Employee>{
+    return this.http.post<Employee>(this.mockUrl,emp,headerOption);
+  }
+
+  updateEmployee(emp : Employee) :Observable<Employee>{
+    return this.http.put<Employee>(this.mockUrl +'/'+emp.id, emp, headerOption);
+  }
 }

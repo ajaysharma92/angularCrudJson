@@ -11,7 +11,7 @@ export class EmployeeListComponent implements OnInit {
 
   allEmployee:Employee[];
   constructor(
-    private employeeservice : EmployeeService
+    private employeeService : EmployeeService
   ) { }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class EmployeeListComponent implements OnInit {
   }
 
   getAllEmployee(){
-    this.employeeservice.getAllEmployees().subscribe(
+    this.employeeService.getAllEmployees().subscribe(
       (data:Employee[]) => {
         this.allEmployee = data;
       });
@@ -27,10 +27,13 @@ export class EmployeeListComponent implements OnInit {
 
   deleteEmployee(id:number){
     console.log(id);
-    this.employeeservice.deleteEmployee(id).subscribe(
+    this.employeeService.deleteEmployee(id).subscribe(
       (data:Employee) => {
         this.getAllEmployee();
       });
   }
 
+  edit(emp){
+    this.employeeService.currentEmployee = Object.assign({}, emp)
+  }
 }
